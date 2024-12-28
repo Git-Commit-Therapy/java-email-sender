@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: emailSender
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 25
+    username: bd196516198641
+    password: d14df3cfd63b1d
+server:
+  port: 7443
