@@ -2,9 +2,9 @@ spring:
   application:
     name: emailSender
   mail:
-    host: sandbox.smtp.mailtrap.io
-    port: 25
-    username: bd196516198641
-    password: d14df3cfd63b1d
+    host: ${SMTP_HOST}
+    port: ${SMTP_PORT}
+    username: ${SMTP_USERNAME}
+    password: ${SMTP_PASSWORD}
 server:
-  port: 7443
+  port: ${SERVER_PORT}

@@ -15,7 +15,8 @@ WORKDIR /app
 
 COPY --from=build /app/target/emailSender-0.0.1-SNAPSHOT.jar .
 
-EXPOSE 7443
+ENV SERVER_PORT=80
+EXPOSE 80
 
 LABEL org.opencontainers.image.source=https://github.com/Git-Commit-Therapy/java-email-sender
 
